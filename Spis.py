@@ -1,10 +1,12 @@
+while True:
+    inp=input('Введи число')
 
-print("Введи число")
+    try:
+        inp=int(inp)
+        ret=inp **3
+        print(f'3 раза умноженное число{ret}')
+    except:
+        print(f'Всё таки нужно ввести число, а вы вели"{inp}"')
+    finally:
+        print('Еще раз')
 
-N=int(input())
-X=0
-F=0
-while X<N:
-     X+=1
-     F+=X
-     print(F)
